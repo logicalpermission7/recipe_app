@@ -41,13 +41,15 @@ const getSearch = e =>{
         <input className='search-bar' type='text' value={search} onChange={updateSearch}></input>
         <button className='search-button' type='submit'>Search</button>
         </form>
-        {recipes.map(recipe => (
-          <Recipe 
-          key={recipe.recipe.label}
-          title={recipe.recipe.label} 
-          ingredients={recipe.recipe.ingredients} 
-          image={recipe.recipe.image}/>
-        ))}
+        <div className='recipes'>
+          {recipes.map(recipe => (
+            <Recipe 
+            key={recipe.recipe.label}
+            title={recipe.recipe.label} 
+            ingredients={recipe.recipe.ingredients} 
+            image={recipe.recipe.image}/>
+          ))}
+        </div>
     </div>
   );
 }
