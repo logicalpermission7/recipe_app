@@ -45,7 +45,7 @@ const getSearch = e =>{
           <Recipe 
           key={recipe.recipe.label}
           title={recipe.recipe.label} 
-          ingredients={recipe.recipe.ingredientLines} 
+          ingredients={recipe.recipe.ingredients} 
           image={recipe.recipe.image}/>
         ))}
     </div>
