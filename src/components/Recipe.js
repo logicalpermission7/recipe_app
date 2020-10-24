@@ -1,10 +1,10 @@
 import React from 'react';
 
-function Recipe({title,calories,image}){
+function Recipe({title,ingredients,image}){
     return(
         <div>
             <h1>{title}</h1>
-            <p>{calories}</p>
+            <p>{ingredients}</p>
             <img src={image} alt=''></img>
         </div>
     )
