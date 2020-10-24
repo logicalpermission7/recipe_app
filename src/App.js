@@ -32,6 +32,7 @@ const getSearch = e =>{
   //preventDefault stops the page from refrshing.
   e.preventDefault();
   setQuery(search);
+  setSearch('');
 }
 
   return (
@@ -41,7 +42,11 @@ const getSearch = e =>{
         <button className='search-button' type='submit'>Search</button>
         </form>
         {recipes.map(recipe => (
-          <Recipe key={recipe.recipe.label}title={recipe.recipe.label} ingredients={recipe.recipe.ingredientLines} image={recipe.recipe.image}/>
+          <Recipe 
+          key={recipe.recipe.label}
+          title={recipe.recipe.label} 
+          ingredients={recipe.recipe.ingredientLines} 
+          image={recipe.recipe.image}/>
         ))}
     </div>
   );
